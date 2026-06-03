@@ -4,10 +4,6 @@ import authByEmailPwd from "../helpers/auth-by-email-pwd.js";
 
 const authRouter = Router();
 
-authRouter.get("/publico", (req, res) => {
-  return res.send("Router publico");
-});
-
 authRouter.post("/autenticado", (req, res) => {
   const { email, password } = req.body;
   if (!email || !password) return res.sendStatus(401);

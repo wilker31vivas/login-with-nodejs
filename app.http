@@ -18,3 +18,11 @@ Content-Type: application/json
     "email": "pablo@rodeology.com",
     "password": "test123"
 }
+
+POST http://localhost:3000/auth-session/login
+Content-Type: application/json
+
+{
+    "email": "pablo@rodeology.com",
+    "password": "test123"
+}
