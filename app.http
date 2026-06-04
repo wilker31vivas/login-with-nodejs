@@ -19,10 +19,28 @@ Content-Type: application/json
     "password": "test123"
 }
 
+###
 POST http://localhost:3000/auth-session/login
 Content-Type: application/json
 
 {
-    "email": "pablo@rodeology.com",
-    "password": "test123"
+    "email": "wilker@zenthall.com",
+    "password": "test1234"
 }
+
+###
+GET http://localhost:3000/auth-session/profile
+
+###
+POST http://localhost:3000/auth-token/login
+Content-Type: application/json
+
+{
+    "email": "wilker@zenthall.com",
+    "password": "test1234"
+}
+
+###
+### Perfil usando token
+GET http://localhost:3000/auth-token/profile
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJndWlkIjoiZDc2OWJiMjktNjg4OS00ZjRlLWIxNWItZWViMWM3M2Q0MzI4IiwiaWF0IjoxNzgwNTY4MjU5LCJleHAiOjE3ODA1NzE4NTl9.GXTbf3iwL0Z_RQaAJAxm8ReT_Yw_s211qpAcG7TwzZg
